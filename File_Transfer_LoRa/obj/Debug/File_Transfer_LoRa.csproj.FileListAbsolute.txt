@@ -1,0 +1,14 @@
+C:\Users\gusta\source\repos\File_Transfer_LoRa\File_Transfer_LoRa\bin\Debug\File_Transfer_LoRa.exe.config
+C:\Users\gusta\source\repos\File_Transfer_LoRa\File_Transfer_LoRa\bin\Debug\File_Transfer_LoRa.exe
+C:\Users\gusta\source\repos\File_Transfer_LoRa\File_Transfer_LoRa\bin\Debug\File_Transfer_LoRa.pdb
+C:\Users\gusta\source\repos\File_Transfer_LoRa\File_Transfer_LoRa\obj\Debug\File_Transfer_LoRa.csprojAssemblyReference.cache
+C:\Users\gusta\source\repos\File_Transfer_LoRa\File_Transfer_LoRa\obj\Debug\File_Transfer_LoRa.Properties.Resources.resources
+C:\Users\gusta\source\repos\File_Transfer_LoRa\File_Transfer_LoRa\obj\Debug\File_Transfer_LoRa.csproj.GenerateResource.cache
+C:\Users\gusta\source\repos\File_Transfer_LoRa\File_Transfer_LoRa\obj\Debug\File_Transfer_LoRa.csproj.CoreCompileInputs.cache
+C:\Users\gusta\source\repos\File_Transfer_LoRa\File_Transfer_LoRa\obj\Debug\File_Transfer_LoRa.exe
+C:\Users\gusta\source\repos\File_Transfer_LoRa\File_Transfer_LoRa\obj\Debug\File_Transfer_LoRa.pdb
+C:\Users\gusta\source\repos\File_Transfer_LoRa\File_Transfer_LoRa\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\gusta\source\repos\File_Transfer_LoRa\File_Transfer_LoRa\obj\Debug\File_Transfer_LoRa.csproj.CopyComplete
+C:\Users\gusta\source\repos\File_Transfer_LoRa\File_Transfer_LoRa\bin\Debug\Newtonsoft.Json.dll
+C:\Users\gusta\source\repos\File_Transfer_LoRa\File_Transfer_LoRa\bin\Debug\Newtonsoft.Json.xml
+C:\Users\gusta\source\repos\File_Transfer_LoRa\File_Transfer_LoRa\obj\Debug\File_Transfer_LoRa.Filte.resources
