@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -75,7 +75,7 @@ namespace File_Transfer_LoRa
                     CheckPathExists = true,
 
                     //DefaultExt = "txt",
-                    //Filter = "txt files (*.txt)|*.txt",
+                    //Filter = "txt files (.txt)|.txt",
                     FilterIndex = 2,
                     RestoreDirectory = true,
 
@@ -212,36 +212,39 @@ namespace File_Transfer_LoRa
 
         private void select_file_Click(object sender, EventArgs e)
         {
-            Upload_File = path();
-            string file_name = getFilename(Upload_File);
-            name_path1.Text = "File: " + file_name;
-
-            createDirectory("temp");
-
-            if (File.Exists(@".\temp\file.zip"))
-                File.Delete(@".\temp\file.zip");
-            else if (File.Exists(@".\file.zip"))
-                File.Delete(@".\file.zip");
-
-            ZipFile.CreateFromDirectory(@".\temp", @".\file.zip");
-            using (ZipArchive zip = ZipFile.Open("file.zip", ZipArchiveMode.Update))
-                zip.CreateEntryFromFile(Upload_File, file_name);
-
-            File.Move(@".\file.zip", @".\temp\file.zip");
-
             try
             {
+                Upload_File = path();
+                string file_name = getFilename(Upload_File);
+                name_path1.Text = "File: " + file_name;
+
+                createDirectory("temp");
+
+                if (File.Exists(@".\temp\file.zip"))
+                    File.Delete(@".\temp\file.zip");
+                else if (File.Exists(@".\file.zip"))
+                    File.Delete(@".\file.zip");
+
+                ZipFile.CreateFromDirectory(@".\temp", @".\file.zip");
+                using (ZipArchive zip = ZipFile.Open("file.zip", ZipArchiveMode.Update))
+                    zip.CreateEntryFromFile(Upload_File, file_name);
+
+                File.Move(@".\file.zip", @".\temp\file.zip");
+
+            
                 if (Upload_File != "" || Upload_File != null)
                     select_file.IconFont = FontAwesome.Sharp.IconFont.Solid;
                 else
                     select_file.IconFont = FontAwesome.Sharp.IconFont.Regular;
+
+                if (File.Exists(@".\file.zip"))
+                    File.Delete(@".\file.zip");
             }
             catch 
             { 
             }
 
-            if (File.Exists(@".\file.zip"))
-                File.Delete(@".\file.zip");
+            
         }
 
         private void decompress(string val = @".\downloaded\file.zip") 
@@ -254,7 +257,7 @@ namespace File_Transfer_LoRa
                 if (package != "")
                     buff = package;
                 else
-                    buff = last_pack;
+                    buff = final_package;
 
                 Byte[] file = Convert.FromBase64String(buff);
                 File.WriteAllBytes(val, file);
@@ -290,7 +293,7 @@ namespace File_Transfer_LoRa
             try
             {
                 saveFileDialog1.Title = "Save File";
-                saveFileDialog1.Filter = "ZIP Files (*.zip)|*.zip";
+                saveFileDialog1.Filter = "ZIP Files (.zip)|.zip";
                 if (saveFileDialog1.ShowDialog() == DialogResult.OK) 
                 {
                     decompress(saveFileDialog1.FileName);
