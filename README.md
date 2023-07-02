@@ -1,5 +1,5 @@
-<h1> Transferência de arquivos via LoRa <h1>
-
+<h1>Transferência de arquivos via LoRa</h1>
+  
 Esse projeto é um projeto feito em C# .Net Freamework 4.7.2 e para editar o projeto, é necessário ter o Visual Studio instalado junto com os pacotes C# para aplicação em desktop
 
 O projeto em si tem duas partes, uma é o aplicativo que é este daqui e a outra parte é o hardware que fica responsável por repassar as informações do app para LoRa e visse versa.
