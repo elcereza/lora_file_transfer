@@ -7,3 +7,6 @@ Para executar o aplicativo basta ir em ./File_Transfer_LoRa/bin/Debug ou https:/
 Possa ser que o computador reconheça esse executável como virus ou programa potencialmente maléfico, isso ocorre por conta da ausência de assinatura digital ou por ter uma assinatura
 referente ao meu computador onde desenvolvi o app. Nesse caso, basta apenas tu ignorar a mensagem e executar o app, mas caso não se sinta a vontade, recomendo dar uma lida no código
 e até mesmo executar uma varredura antivirus.
+
+
+Para obter o código do hardware e também saber mais sobre este projeto em si, recomendo acessar o meu site: https://elcereza.com/transferencia-da-arquivos-via-lora/
